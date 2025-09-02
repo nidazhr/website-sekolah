@@ -15,8 +15,10 @@
 
 <body>  
   <nav
-   class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg-fixed-top">
+   class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg-fixed-top sticky-top">
    <div class="container">
+    
+    <img src="logo.png" alt="gambar" width="40"height="40">
     <a class="navbar-brand" href="#">SMK Negeri 4</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,11 +27,18 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         
         <li class="nav-item">
-          <a class="nav-link" href="#jurusan">Jurusan</a>
+          <a class="nav-link" href="#beranda">Beranda</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#berita">Berita</a>
-        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="profile.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Profil
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="identitas.html">Identitas Sekolah</a></li>
+          <li><a class="dropdown-item" href="#">Sejarah</a></li>
+          <li><a class="dropdown-item" href="#">Kepala sekolah</a></li>
+          </ul>
+          </li>
         <li class="nav-item">
           <a class="nav-link" href="#ekstrakulikuler">Ekstrakulikuler</a>
         </li>
@@ -47,20 +56,21 @@
     </div>
   </div>
 </nav>
-<div class="container-fluid banner">
-  <div class="container text-center">
-    <h4 class="display-6">selamat datang di website kami</h4>
-    <h3 class="display-1">Hai Hallo!</h3>
-    <a href="#layanan">
-      
-    </a>
-  </div>
+
+
+<!-- Foto sebelum sambutan -->
+<div class="foto-separator text-center">
+  <img src="WhatsApp Image 2025-09-02 at 09.10.54.jpeg" 
+       alt="SMKN 4 Tasikmalaya" 
+       class="img-fluid rounded shadow">
 </div>
+
+
 
 <div class="container sambutan">
   <div class="foto text-center">
     <p class="judul">Sambutan <br><span>Kepala Sekolah</span></p>
-    <img src="image/kepalasekolah..png" alt="Kepala Sekolah">
+    <img src="kepalasekolah..png" alt="Kepala Sekolah">
   </div>
   <div class="teks">
     <h3>Kurniawan S.Pd, M.Pd</h3>
@@ -84,77 +94,57 @@
 </div>
 
 
-<div class="container-fluid layanan pt-5 pb-5">
-    <div class="container text-center">
-        <h2 class="display-3 "id="jurusan">Jurusan</h2>
-        
-        <div class="row pt-4">
-          <div class="col-md-4">
-        <div class="card jurusan-card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <span class="lingkaran"><i class="fas fa-code fa-5x"></i>
-              
-            </span>
-            <h4 class="mt-3">PPLG</h4>
-            <p class="text-muted small">Pengembang Perangkat Lunak dan Gim</p>
-          </div>
-        </div>
+<div class="row pt-4 g-4">   <!-- tambahin g-4 -->
+
+  <div class="container my-5">
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="card p-3 shadow-sm">
+        <img src="pplg.png" alt="PPLG" class="mx-auto" width="80">
+        <h5 class="mt-3">PPLG</h5>
+        <p>Pengembangan Perangkat Lunak & Gim</p>
       </div>
-
-      <div class="col-md-4">
-        <div class="card jurusan-card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <span class="lingkaran"><i class="fa-solid fa-wifi fa-5x"></i>
-              
-            </span>
-            <h4 class="mt-3">TJKT</h4>
-            <p class="text-muted small">Pengembang Perangkat Lunak dan Gim</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card jurusan-card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <span class="lingkaran"><i class="fa-solid fa-camera fa-5x"></i>
-              
-            </span>
-            <h4 class="mt-3">DKV</h4>
-            <p class="text-muted small">Desain Komunikasi Visual</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card jurusan-card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <span class="lingkaran"><i class="fa-solid fa-motorcycle fa-5x"></i>
-              
-            </span>
-            <h4 class="mt-3">TBSM</h4>
-            <p class="text-muted small">Teknik dan Bisnis Sepeda Motor</p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-md-4">
-        <div class="card jurusan-card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <span class="lingkaran"><i class="fa-solid fa-industry fa-5x"></i>
-              
-            </span>
-            <h4 class="mt-3">TOI</h4>
-            <p class="text-muted small">Teknik Otomasi Industri </p>
-          </div>
-        </div>
-      </div>
-
-
-    </div> 
-        </div>
     </div>
+    <div class="col-md-4 mb-4">
+      <div class="card p-3 shadow-sm">
+        <img src="tkj.png" alt="TJKT" class="mx-auto" width="80">
+        <h5 class="mt-3">TJKT</h5>
+        <p>Teknik Jaringan Komputer & Telekomunikasi</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card p-3 shadow-sm">
+        <img src="dkv.png" alt="DKV" class="mx-auto" width="80">
+        <h5 class="mt-3">DKV</h5>
+        <p>Desain Komunikasi Visual</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card p-3 shadow-sm">
+        <img src="tbsm.png" alt="TBSM" class="mx-auto" width="80">
+        <h5 class="mt-3">TBSM</h5>
+        <p>Teknik & Bisnis Sepeda Motor</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card p-3 shadow-sm">
+        <img src="toi.png" alt="TOI" class="mx-auto" width="80">
+        <h5 class="mt-3">TOI</h5>
+        <p>Teknik Otomasi Industri</p>
+      </div>
+    </div>
+  </div>
 </div>
 
+ 
+
+            
+      
+
+
+    
+              
+                    
 <!-- Berita -->
 <section id="berita">
   <div class="container">
@@ -165,7 +155,7 @@
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card berita-card h-100 shadow-sm">
-          <img src="image/berita.png" class="card-img-top" alt="Berita">
+          <img src="berita.png" class="card-img-top" alt="Berita">
           <div class="card-body">
            
             <h5><p class="card-text">SMKN 4 Tasikmalaya Koneksikan Iduka dengan Pencari Kerja</p></h5>
@@ -176,7 +166,7 @@
       </div>
       <div class="col-md-4">
         <div class="card berita-card h-100 shadow-sm">
-          <img src="image/kerjasama.png" class="card-img-top" alt="Berita 2">
+          <img src="kerjasama.png" class="card-img-top" alt="Berita 2">
           <div class="card-body">
           
            
@@ -188,18 +178,102 @@
       </div>
       <div class="col-md-4">
         <div class="card berita-card h-100 shadow-sm">
-          <img src="berita3.jpg" class="card-img-top" alt="Berita 3">
+          <img src="safety riding.png" class="card-img-top" alt="Berita 3">
           <div class="card-body">
            
-            <p class="text-muted small">20 Agustus 2025</p>
-            <p class="card-text">Jurusan DKV mengadakan workshop desain grafis dengan narasumber profesional...</p>
-            <a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
+            <p class="text-muted small">20 Mei 2024</p>
+            <h5><p class="card-text">Honda Resmikan Safety Riding Lab di SMKN 4 Tasikmalaya, Ciptakan Bibit Keselamatan di Jawa Barat</p></h5>
+            <a href="https://www.pikiran-rakyat.com/otomotif/pr-018109177/honda-resmikan-safety-riding-lab-di-smkn-4-tasikmalaya-ciptakan-bibit-keselamatan-pada-gen-z?page=all" class="btn btn-primary btn-sm">Baca Selengkapnya</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<div class="container my-4">
+
+  <div class="d-flex justify-content-center shadow rounded overflow-hidden" style="max-width: 900px; margin: auto;">
+    <div class="card-stat flex-fill p-3 d-flex flex-column align-items-center">
+      <i class="bi bi-person-circle mb-2"></i>
+      <strong>82 Orang</strong>
+      <small class="text-small">Guru / Pendidik</small>
+    </div>
+    <div class="card-stat flex-fill p-3 d-flex flex-column align-items-center">
+      <i class="bi bi-people-fill mb-2"></i>
+      <strong>1500 Orang</strong>
+      <small class="text-small">Siswa</small>
+    </div>
+    <div class="card-stat flex-fill p-3 d-flex flex-column align-items-center">
+      <i class="bi bi-person-badge-fill mb-2"></i>
+      <strong>10 Orang</strong>
+      <small class="text-small">Staf TU</small>
+    </div>
+    <div class="card-stat flex-fill p-3 d-flex flex-column align-items-center">
+      <i class="bi bi-lightbulb-fill mb-2"></i>
+      <strong>18</strong>
+      <small class="text-small">Ekstrakurikuler</small>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-light text-dark pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Kolom Alamat -->
+      <div class="col-md-4">
+        <h5 class="mb-3">Alamat</h5>
+        <p>SMK Negeri 4 Tasikmalaya<br>
+          Jl. Depok, Sukamenak, Purbaratu,<br>
+          Kota Tasikmalaya, Jawa Barat 46196
+        </p>
+        <div class="rounded shadow-sm" style="height:200px; overflow:hidden;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.2809488774463!2d108.21688987406286!3d-7.429902273047822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6592fd1e8f2a6d%3A0xb31a68f9f64fdf75!2sSMKN%204%20Tasikmalaya!5e0!3m2!1sid!2sid!4v1693908852461!5m2!1sid!2sid" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Kolom Kontak -->
+      <div class="col-md-4">
+        <h5 class="mb-3">Kontak</h5>
+        <p><i class="bi bi-telephone-fill text-primary"></i> 0265-312059</p>
+        <p><i class="bi bi-envelope-fill text-primary"></i> info@smkn4-tsm.sch.id</p>
+        
+        <h6 class="mt-4 mb-2">Media Sosial</h6>
+        <div class="d-flex gap-3 fs-4">
+          <a href="https://www.facebook.com/4smkn" class="text-dark"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/smkn4tsmofficial/" class="text-dark"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@smkn4tasikmalaya?_t=ZS-8zNqoHjBgps&_r=1" class="text-dark"><i class="bi bi-tiktok"></i></a>
+          <a href="https://youtube.com/@smkn4tasikmalayamediaoffic704?si=8V2m0TL4O7j7kLMD" class="text-dark"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Kolom Link Lainnya -->
+      <div class="col-md-4">
+        <h5 class="mb-3">Link Lainnya</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://kemendikdasmen.go.id/" class="text-decoration-none text-dark">Kemdikbud</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Dapodiknasmen</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">PSMK</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Disdik Jabar</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="mt-4">
+    <p class="text-center mb-0">&copy; 2025. SMK Negeri 4 Tasikmalaya. Nida Khoiriyah</p>
+  </div>
+</footer>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

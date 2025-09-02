@@ -19,6 +19,16 @@
   color: white;
 }
 
+.foto-separator {
+  margin: 40px 0; /* kasih jarak atas-bawah */
+}
+
+.foto-separator img {
+  max-width: 100%;
+  border-radius: 10px; /* sudut agak melengkung */
+}
+
+
 .sambutan {
   display: flex;
   align-items: center;
@@ -55,3 +65,45 @@
 .sambutan .judul span {
   color: #0d6efd;
 }
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+/* kasih jarak antar card */
+.layanan .row {
+  row-gap: 40px;   /* jarak vertikal antar baris */
+  column-gap: 20px; /* jarak horizontal antar kolom */
+}
+
+.card-stat {
+  background: linear-gradient(135deg, #0d6efd, #0033cc); /* biru gradasi */
+  color: white; 
+  border-radius: 10px;
+  margin: 5px; /* kasih jarak antar kotak */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-stat i {
+  font-size: 2rem;
+  color: #fff; /* ikon jadi putih */
+}
+
+.card-stat:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+
